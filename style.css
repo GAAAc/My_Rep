@@ -1,0 +1,374 @@
+body {
+	font-family: 'fonts/Raleway-Regular.ttf';
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/*Подключение шрифтов*/
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url('fonts/Raleway-Regular.ttf');
+}
+
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Merriweather-Regular';
+	src: url('fonts/Merriweather-Regular.ttf');
+}
+
+/*Свойства внутри класса HEADER_MAIN*/
+
+.header {
+	height: 806px;
+	background-color: #f1efef;
+	position: relative;
+}
+
+.logo {
+	/*Общие свойства не зависимо от места расположения логотипа в макете*/
+	width: 113px;
+	height: 46px;
+	border: 5px solid #170f1c;
+	box-sizing: border-box;
+
+	font-family: 'Montserrat-Bold';
+	font-size: 17px;
+	line-height: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 3px 0; /*Выравнивание по высоте*/
+}
+
+.logo span {
+	color: #12deb5;
+}
+
+.header__logo {	
+	float: left; /*Теперь блок не занимает влю ширину*/
+
+	position: relative;
+	top: 65px;
+	left: 10.4%;
+}
+
+.header__menu {
+	height: 21px;
+	width: 32px;
+	float: right; /*Теперь блок не занимает влю ширину*/
+
+	position: relative;
+	top: 80px;
+	right: 10.6%;
+
+	background-color: red; /*Временный цвет для отображения на экране*/
+}
+
+.header__text {
+	clear: both;
+
+	position: relative;
+	top: calc(305px - 46px);
+
+	padding: 0 10.4%; /*Чтобы при сужении экрана буквы не прилипали к краям*/
+}
+
+.header__text p {
+	font-family: 'Montserrat-Bold';
+	font-size: 45px;
+	line-height: 56px;	
+	text-transform: uppercase;
+	text-align: center;	
+	color: #505050;
+	text-shadow: 4px 9px 10px rgba(0, 0, 0, 0.24);	
+}
+
+.header__text span {
+	background-color:  rgba(118, 244, 234, 0.5);
+	padding: 0 10px;
+}
+
+.header__button {
+	width: 232px;
+	height: 53px;
+
+	text-decoration: none;
+	font-family: 'Merriweather-Regular';
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 11px 0;
+	color: #3c3c3d;
+	
+	box-sizing: border-box;
+	border: 2px solid #777879;
+
+	background-color: transparent;
+	
+	float: left;
+	position: relative;
+	top: calc(560px - 46px - 111px);
+	left: 42%;
+}
+
+.header__img1 {
+	width: 68px;
+	height: 69px;
+	
+	position: absolute;
+	bottom: 136px;
+	right: 17.2%;
+}
+
+.header__img2 {	
+	position: absolute;
+	bottom: 155px;
+	right: 16.9%;
+}
+
+
+
+.about_us {
+	min-height: 985px;
+	background-color: #f8fafa;
+}
+
+.title_h2 {
+	font-family: 'Montserrat-Bold';
+	color: #181919;
+	font-size: 38px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 129px;
+}
+
+.title_p {
+	font-family: 'Merriweather-Regular';
+	color: #000000;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 13px;
+	margin-bottom: 85px;
+}
+
+.about_us__slider {
+	height: 630px;
+	width: 50%;
+	float: left;
+	outline: 1px solid black;
+}
+
+.about_us__article {
+	min-height: 630px;
+	width: 50%;
+	float: right;
+	box-sizing: border-box;
+	padding-top: 62px;
+	padding-left: 3.7%;
+	padding-right: 12.8%;
+}
+
+.about_us__article h3 {
+	font-family: 'Merriweather-Regular';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin-bottom: 28px;
+}
+
+.about_us__article p {
+	font-family: 'Raleway-Regular';
+	font-size: 16px;
+	line-height: 28px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+/*Чтобы при увеличении контента в article блок about_us мог увеличивать высоту*/
+.float_both {
+	clear: both;
+}
+
+
+
+.featured-works {
+	min-height: 1166px;
+	background-color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.featured-works main {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 750px;
+	padding: 0 10.3%;
+	text-align: center;
+}
+
+.featured-works a {
+	display: inline-block;
+	width: 370px;
+	height: 359px;
+	margin: 5px 4px;
+
+	transition: all .5s ease;
+}
+
+.featured-works a:last-child {
+	clear: both;
+}
+
+.featured-works a:hover {
+	transform: scale(1.05);
+}
+
+
+
+
+.our-services {
+	min-height: 1618px;
+	background-color: #f9fbfb;
+}
+
+.our-services main {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 1300px;
+	padding: 0 10.3%;
+	text-align: center;
+}
+
+.our-services main div {
+	display: inline-block;
+	margin: 4px 3px;
+}
+
+.our-services .services1 {
+	width: 652px;
+	height: 422px;
+	background-image: url(img/Our1.jpg);
+	position: relative;
+}
+
+.our-services .services1:before {
+	content: '';
+	width: 652px;
+	height: 422px;
+	background-color: #71f5ea;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.our-services .services1:hover:before {
+	opacity: 1;
+}
+
+.our-services .services1 h3 {
+	content: '';
+	font-family: 'Merriweather-Regular';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin-bottom: 28px;
+	position: absolute;
+	top: 58px;
+	left: 65px;
+	opacity: 0;
+}
+
+.our-services .services1 p {
+	content: '';
+	font-family: 'Raleway-Regular';
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+	position: absolute;
+	top: 100px;
+	left: 65px;
+	opacity: 0;
+}
+
+.our-services .services1:hover h3,
+.our-services .services1:hover p {
+	padding-right: 140px;
+	opacity: 1;
+}
+
+.our-services .services2 {
+	width: 474px;
+	height: 422px;
+	background-image: url(img/Our2.jpg);
+}
+
+.our-services .services3 {
+	width: 651px;
+	height: 370px;
+	background-image: url(img/Our3.jpg);
+}
+
+.our-services .services4 {
+	width: 472px;
+	height: 370px;
+	background-image: url(img/Our4.jpg);
+}
+
+.our-services .services5 {
+	width: 472px;
+	height: 370px;
+	background-image: url(img/Our5.jpg);
+}
+
+.our-services .services6 {
+	width: 651px;
+	height: 370px;
+	background-image: url(img/Our6.jpg);
+}
+
+
+.small-team {
+	min-height: 1314px;
+	background-color: #ffffff;
+}
+
+.what-they-says {
+	min-height: 923px;
+	background-color: #f9fbfb;
+}
+
+.brand-name {
+	min-height: 387px;
+}
+
+.contact-us {
+	min-height: 704px;
+	background-image: url('img/Fon.jpg');
+}
+
+.footer-main {
+	min-height: 312px;
+	background-color: #262b2e;
+}
+
+@media screen and (max-width: 1370px) {
+	.our-services .services2,
+	.our-services .services4,
+	.our-services .services5 {
+		width: 651px;
+	}
+	
+}
