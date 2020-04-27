@@ -255,29 +255,26 @@ body {
 	margin: 4px 3px;
 }
 
-.our-services .services1 {
-	width: 652px;
-	height: 422px;
-	background-image: url(img/Our1.jpg);
+/*-----------------------------------------------------------------------*/
+.pos {
 	position: relative;
 }
 
-.our-services .services1:before {
+.pos:before {
 	content: '';
-	width: 652px;
-	height: 422px;
-	background-color: #71f5ea;
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	transition: opacity 1.0s;
 	opacity: 0;
 }
 
-.our-services .services1:hover:before {
+.pos:hover:before {
 	opacity: 1;
 }
 
-.our-services .services1 h3 {
+.pos h3 {
 	content: '';
 	font-family: 'Merriweather-Regular';
 	font-size: 20px;
@@ -285,28 +282,89 @@ body {
 	line-height: 28px;
 	text-transform: uppercase;
 	margin-bottom: 28px;
-	position: absolute;
-	top: 58px;
-	left: 65px;
+
+	transition: opacity 0.7s;
 	opacity: 0;
 }
 
-.our-services .services1 p {
+.pos p {
 	content: '';
 	font-family: 'Raleway-Regular';
 	font-size: 16px;
 	line-height: 28px;
 	text-align: left;
-	position: absolute;
-	top: 100px;
-	left: 65px;
+	margin-bottom: 28px;
+	
+	transition: opacity 0.7s;
 	opacity: 0;
 }
 
-.our-services .services1:hover h3,
-.our-services .services1:hover p {
-	padding-right: 140px;
+.pos a {
+	content: '';
+
+	transition: opacity 0.7s;
+	opacity: 0;
+}
+
+.pos:hover h3,
+.pos:hover p,
+.pos:hover a {	
 	opacity: 1;
+}
+
+.our-services .services1 {	
+	width: 652px;
+	height: 422px;
+	background-image: url(img/Our1.jpg);	
+}
+
+.our-services .services1:before {	
+	width: 652px;
+	height: 422px;
+	background-color: #71f5ea;	
+}
+
+.our-services .services1 h3 {
+	padding-right: 140px;
+	position: absolute;
+	top: 58px;
+	left: 65px;	
+}
+
+.our-services .services1 p {
+	padding-right: 140px;
+	position: absolute;
+	top: 100px;
+	left: 65px;	
+}
+
+.our-services .services1 a {
+	padding-right: 140px;
+	position: absolute;
+	top: 300px;
+	left: 65px;
+}
+
+/*---------------------------------------------------------------------*/
+.disH3 {
+	color: #ffffff;
+	padding-right: 23%;
+	position: absolute;
+	top: 58px;
+	left: 65px;	
+}
+.disP {
+	color: #ffffff;
+	padding-right: 23%;
+	position: absolute;
+	top: 100px;
+	left: 65px;
+}
+.disA {
+	padding-right: 140px;
+	position: absolute;
+	top: 200px;
+	left: 65px;	
 }
 
 .our-services .services2 {
@@ -314,11 +372,21 @@ body {
 	height: 422px;
 	background-image: url(img/Our2.jpg);
 }
+.our-services .services2:before {	
+	width: 474px;
+	height: 422px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 .our-services .services3 {
 	width: 651px;
 	height: 370px;
 	background-image: url(img/Our3.jpg);
+}
+.our-services .services3:before {	
+	width: 651px;
+	height: 370px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .our-services .services4 {
@@ -327,16 +395,34 @@ body {
 	background-image: url(img/Our4.jpg);
 }
 
+.our-services .services4:before {	
+	width: 472px;
+	height: 370px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .our-services .services5 {
 	width: 472px;
 	height: 370px;
 	background-image: url(img/Our5.jpg);
 }
 
+.our-services .services5:before {	
+	width: 472px;
+	height: 370px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .our-services .services6 {
 	width: 651px;
 	height: 370px;
 	background-image: url(img/Our6.jpg);
+}
+
+.our-services .services6:before {	
+	width: 651px;
+	height: 370px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -367,7 +453,10 @@ body {
 @media screen and (max-width: 1370px) {
 	.our-services .services2,
 	.our-services .services4,
-	.our-services .services5 {
+	.our-services .services5,
+	.our-services .services2:before,
+	.our-services .services4:before,
+	.our-services .services5:before {
 		width: 651px;
 	}
 	
