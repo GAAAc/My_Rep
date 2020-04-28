@@ -255,12 +255,11 @@ body {
 	margin: 4px 3px;
 }
 
-/*-----------------------------------------------------------------------*/
-.pos {
+/*-----------------------------------------------------------*/
+.our-services .pos {
 	position: relative;
 }
-
-.pos:before {
+.our-services .pos:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -269,25 +268,103 @@ body {
 	transition: opacity 1.0s;
 	opacity: 0;
 }
-
-.pos:hover:before {
+.our-services .pos:hover:before {
 	opacity: 1;
 }
 
-.pos h3 {
-	content: '';
+.our-services .services1,
+.our-services .services1:before {	
+	width: 652px;
+	height: 422px;
+}
+.our-services .services1 {
+	background-image: url(img/Our1.jpg);	
+}
+.our-services .services1:before {
+	background-color: #71f5ea;	
+}
+
+.our-services .services2,
+.our-services .services2:before {
+	width: 474px;
+	height: 422px;
+}
+.our-services .services2 {
+	background-image: url(img/Our2.jpg);
+}
+.our-services .services2:before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.our-services .services3,
+.our-services .services3:before {
+	width: 651px;
+	height: 370px;
+}
+.our-services .services3 {
+	background-image: url(img/Our3.jpg);
+}
+.our-services .services3:before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.our-services .services4,
+.our-services .services4:before {
+	width: 472px;
+	height: 370px;
+}
+.our-services .services4 {
+	background-image: url(img/Our4.jpg);
+}
+.our-services .services4:before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.our-services .services5,
+.our-services .services5:before {
+	width: 472px;
+	height: 370px;
+}
+.our-services .services5 {
+	background-image: url(img/Our5.jpg);
+}
+.our-services .services5:before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.our-services .services6,
+.our-services .services6:before {
+	width: 651px;
+	height: 370px;
+}
+.our-services .services6 {
+	background-image: url(img/Our6.jpg);
+}
+.our-services .services6:before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.textBlok {
+	content: '',
+	transition: opacity 0.7s;
+	opacity: 0;
+}
+
+.our-services .pos h3 {
+	/*content: '';*/
 	font-family: 'Merriweather-Regular';
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 28px;
 	text-transform: uppercase;
-	margin-bottom: 28px;
+	/*margin-bottom: 28px;*/
 
-	transition: opacity 0.7s;
-	opacity: 0;
+	/*transition: opacity 0.7s;
+	opacity: 0;*/
 }
 
-.pos p {
+.our-services .pos p {
 	content: '';
 	font-family: 'Raleway-Regular';
 	font-size: 16px;
@@ -299,29 +376,18 @@ body {
 	opacity: 0;
 }
 
-.pos a {
+.our-services .pos a {
 	content: '';
 
 	transition: opacity 0.7s;
 	opacity: 0;
 }
 
-.pos:hover h3,
-.pos:hover p,
-.pos:hover a {	
+.our-services .pos:hover h3,
+.our-services .pos:hover p,
+.our-services .pos:hover a,
+.our-services .pos:hover .textBlok {	
 	opacity: 1;
-}
-
-.our-services .services1 {	
-	width: 652px;
-	height: 422px;
-	background-image: url(img/Our1.jpg);	
-}
-
-.our-services .services1:before {	
-	width: 652px;
-	height: 422px;
-	background-color: #71f5ea;	
 }
 
 .our-services .services1 h3 {
@@ -346,84 +412,34 @@ body {
 }
 
 /*---------------------------------------------------------------------*/
-.disH3 {
-	color: #ffffff;
-	padding-right: 23%;
+.textBlok {
 	position: absolute;
 	top: 58px;
 	left: 65px;	
 }
+.disH3 {
+	color: #ffffff;
+	padding-right: 23%;
+	/*position: absolute;
+	top: 58px;
+	left: 65px;*/	
+}
 .disP {
 	color: #ffffff;
 	padding-right: 23%;
-	position: absolute;
+	/*position: absolute;
 	top: 100px;
-	left: 65px;
+	left: 65px;*/
 }
 .disA {
 	padding-right: 140px;
-	position: absolute;
+	/*position: absolute;
 	top: 200px;
-	left: 65px;	
+	left: 65px;	*/
 }
 
-.our-services .services2 {
-	width: 474px;
-	height: 422px;
-	background-image: url(img/Our2.jpg);
-}
-.our-services .services2:before {	
-	width: 474px;
-	height: 422px;
-	background-color: rgba(0, 0, 0, 0.5);
-}
+/*---------------------------------------------------------------------*/
 
-.our-services .services3 {
-	width: 651px;
-	height: 370px;
-	background-image: url(img/Our3.jpg);
-}
-.our-services .services3:before {	
-	width: 651px;
-	height: 370px;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-.our-services .services4 {
-	width: 472px;
-	height: 370px;
-	background-image: url(img/Our4.jpg);
-}
-
-.our-services .services4:before {	
-	width: 472px;
-	height: 370px;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-.our-services .services5 {
-	width: 472px;
-	height: 370px;
-	background-image: url(img/Our5.jpg);
-}
-
-.our-services .services5:before {	
-	width: 472px;
-	height: 370px;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-.our-services .services6 {
-	width: 651px;
-	height: 370px;
-	background-image: url(img/Our6.jpg);
-}
-
-.our-services .services6:before {	
-	width: 651px;
-	height: 370px;
-	background-color: rgba(0, 0, 0, 0.5);
-}
 
 
 .small-team {
