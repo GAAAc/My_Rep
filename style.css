@@ -509,7 +509,7 @@ body {
 .small-team .pos:hover .romb5,
 .small-team .pos:hover .romb6 {
 	opacity: 1;
-	transition: opacity 1.5s;
+	transition: opacity 2s;
 }
 .small-team .pos:hover .square1,
 .small-team .pos:hover .square2,
