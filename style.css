@@ -452,15 +452,144 @@ body {
 	opacity: 1;
 }
 
-
-
-
-
+/*----------------------------------------------------------*/
 
 .small-team {
-	min-height: 1314px;
+	min-height: 1315px;
 	background-color: #ffffff;
 }
+
+.small-team main {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 1119px;
+	padding: 0 10.3%;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.small-team .pos {
+	position: relative;
+	display: inline-block;
+	width: 370px;
+	height: 440px;
+	margin: 6px 4px;
+}
+
+.small-team .pos > .romb {
+	position: absolute;
+	bottom: 238px;
+	left: 30px;
+	/*CSS треугольник*/
+	width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid #6ef5ea;
+	opacity: 0;
+}
+
+.small-team .pos > .square {
+	position: absolute;
+	bottom: 17px;
+	left: 17px;
+	width: 335px;
+	height: 242px;
+	background-color: #6ef5ea;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 40px;
+	opacity: 0;
+}
+
+.small-team .pos:hover .romb1,
+.small-team .pos:hover .romb2,
+.small-team .pos:hover .romb3,
+.small-team .pos:hover .romb4,
+.small-team .pos:hover .romb5,
+.small-team .pos:hover .romb6 {
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+.small-team .pos:hover .square1,
+.small-team .pos:hover .square2,
+.small-team .pos:hover .square3,
+.small-team .pos:hover .square4,
+.small-team .pos:hover .square5,
+.small-team .pos:hover .square6 {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.small-team .pos > .square > h1 {
+	font-family: 'Merriweather-Regular';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.small-team .pos > .square > h1 > span{
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: none;
+	color: #767070;
+}
+
+.small-team .pos > .square > p {
+	font-family: 'Raleway-Regular';
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.small-team .pos > .square > .social {
+	height: 35px;
+}
+
+.small-team .pos > .square > .social > li {
+	display: inline-block;
+	width: 25px;
+	height: 15px;
+	margin: 10px 0;
+	background-repeat: no-repeat;
+}
+
+.small-team .pos > .square > .social > li:nth-child(1) {
+	background-image: url('img/facebook-f-brands.svg');
+}
+
+.small-team .pos > .square > .social > li:nth-child(2) {
+	background-image: url('img/twitter-brands.svg');
+}
+.small-team .pos > .square > .social > li:nth-child(3) {
+	background-image: url('img/instagram-brands.svg');
+}
+.small-team .pos > .square > .social > li:nth-child(4) {
+	background-image: url('img/envelope-regular.svg');
+}
+
+.small-team .pos > .square > .social > li:nth-child(1):hover,
+.small-team .pos > .square > .social > li:nth-child(2):hover,
+.small-team .pos > .square > .social > li:nth-child(3):hover,
+.small-team .pos > .square > .social > li:nth-child(4):hover {
+	margin: 7.5px 0;
+	height: 20px;
+}
+
+.small-team .pos > .square > .social > li > a {
+	display: block;
+	width: 30px;
+	height: 15px;
+}
+
+
+
+
+
 
 .what-they-says {
 	min-height: 923px;
