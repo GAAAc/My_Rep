@@ -499,7 +499,7 @@ body {
 	text-align: left;
 	box-sizing: border-box;
 	padding: 40px;
-	opacity: 0;
+	opacity: 1;
 }
 
 .small-team .pos:hover .romb1,
@@ -547,21 +547,23 @@ body {
 }
 
 .small-team .pos > .square > .social {
-	height: 35px;
+	height: 20px;
 }
 
 .small-team .pos > .square > .social > li {
 	display: inline-block;
 	width: 25px;
-	height: 15px;
-	margin: 10px 0;
+	height: 20px;
+	margin-left: -4px;
 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px 15px;
+
 }
 
 .small-team .pos > .square > .social > li:nth-child(1) {
 	background-image: url('img/facebook-f-brands.svg');
 }
-
 .small-team .pos > .square > .social > li:nth-child(2) {
 	background-image: url('img/twitter-brands.svg');
 }
@@ -576,8 +578,7 @@ body {
 .small-team .pos > .square > .social > li:nth-child(2):hover,
 .small-team .pos > .square > .social > li:nth-child(3):hover,
 .small-team .pos > .square > .social > li:nth-child(4):hover {
-	margin: 7.5px 0;
-	height: 20px;
+	background-size: 100% 100%;
 }
 
 .small-team .pos > .square > .social > li > a {
