@@ -166,8 +166,59 @@ body {
 	height: 630px;
 	width: 50%;
 	float: left;
-	outline: 1px solid black;
 }
+
+.about_us__slider .wrap {
+	position: relative;
+	top: 60px;
+	left: 185px;
+	height: 540px;
+	width: 480px;
+}
+
+.about_us__slider .wrap .ground {
+	position: absolute;
+	top: 36px;
+	height: 410px;
+	width: inherit;
+	background-color: #ecedef;
+}
+
+.about_us__slider .slide {
+	position: absolute;
+	left: 50%;
+	margin-left: -196px;
+	width: 392px;
+	height: 483px;
+	box-shadow: 0 0 30px rgba(20, 20, 20, 0.13);
+}
+
+.about_us__slider .wrap input {
+	display: none;
+}
+
+.about_us__slider .wrap .control {
+	position: absolute;
+	left: 50%;
+	margin-left: -25px; 
+	bottom: 0;
+	width: 50px;
+	height: 10px;
+}
+
+.about_us__slider .wrap .control label {
+	display: inline-block;
+	position: relative;
+	margin-left: -1px;
+	width: 10px;
+	height: 10px;
+	background-color: #d0d0d0;
+}
+
+#slide1:checked ~ .control label:nth-of-type(1) {
+	background-color: #71f6eb;
+}
+
 
 .about_us__article {
 	min-height: 630px;
@@ -198,6 +249,7 @@ body {
 
 /*Чтобы при увеличении контента в article блок about_us мог увеличивать высоту*/
 .float_both {
+	height: 20px;
 	clear: both;
 }
 
@@ -620,5 +672,19 @@ body {
 	.our-services .services5:before {
 		width: 651px;
 	}
+
+	.about_us__slider {
+	width: 100%;
+	float: none;
+	outline: 1px solid black;
+	}
+
+	.about_us__article {
+		width: 100%;
+		float: none;
+	}
 	
+	.about_us__slider .wrap {
+	left: 50%;
+	margin-left: -240px;
 }
