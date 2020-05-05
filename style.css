@@ -641,13 +641,179 @@ body {
 
 
 
-
-
-
 .what-they-says {
 	min-height: 923px;
 	background-color: #f9fbfb;
 }
+
+.what-they-says .wrap-left,
+.what-they-says .wrap-right {
+	height: 600px;
+}
+
+.what-they-says .wrap-left {
+	float: left;
+	width: 43.3%;
+}
+
+.what-they-says .wrap-right {
+	float: left;
+	width: 56.7%;
+	min-width: 666px;	
+}
+
+.what-they-says .wrap-left .wrap {
+	position: relative;
+	top: 50px;
+	left: 149px;
+	height: 470px;
+	width: 392px;
+}
+
+.what-they-says .wrap-left .wrap .ground {
+	position: absolute;
+	top: 25px;
+	height: 362px;
+	width: inherit;
+	background-color: #ecedef;
+}
+
+.what-they-says .wrap-left .wrap .slide {
+	position: absolute;
+	left: 50%;
+	margin-left: -159px;
+	width: 319px;
+	height: 410px;
+	box-shadow: 0 0 24px rgba(20, 20, 20, 0.17);
+}
+
+.what-they-says .wrap-left .wrap input {
+	display: none;
+}
+
+.what-they-says .wrap-left .wrap .control {
+	position: absolute;
+	left: 50%;
+	margin-left: -25px; 
+	bottom: 0;
+	width: 50px;
+	height: 10px;
+}
+
+.what-they-says .wrap-left .wrap .control label {
+	display: inline-block;
+	position: relative;
+	margin-left: -1px;
+	width: 10px;
+	height: 10px;
+	background-color: #d0d0d0;
+}
+
+/*Этот сладер СПОРИТ с верхним подобным слайдером.
+Родственные связи!!!! label:nth-of-type(1)*/
+#slide1_1:checked ~ .control label:nth-of-type(1) {
+	background-color: #71f6eb;
+}
+
+.what-they-says .wrap-right .wrap {
+	position: relative;
+	width: 666px;
+	height: 446px;
+	margin-top: 75px;
+}
+
+.what-they-says .wrap-right .wrap .info {
+	width: inherit;
+	height: 362px;
+	background-color: #eaebed;
+	box-sizing: border-box;
+	padding: 90px 100px 20px;
+	text-align: center;
+}
+
+.what-they-says .wrap-right .wrap .info h3 {
+	font-family: 'Merriweather-Regular';
+	font-size: 20px; 
+	font-weight: bold;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.what-they-says .wrap-right .wrap .info span {
+	font-family: 'Merriweather-Regular';
+	font-size: 15px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #787878;
+	font-style: italic;
+}
+.what-they-says .wrap-right .wrap .info p {
+	font-family: 'Raleway-Regular';
+	font-size: 16px;
+	line-height: 27px;
+	color: #787878;
+	margin-bottom: 25px;
+}
+
+.what-they-says .wrap-right .wrap .info ul {
+	width: 130px;
+	height: 18px;
+	margin: 0 auto;
+}
+
+.what-they-says .wrap-right .wrap .info ul li {
+	display: inline-block;
+	width: 18px;
+	height: inherit;
+	margin:0 1px 0;
+}
+
+.what-they-says .wrap-right .wrap .control {
+	position: absolute;
+	bottom: 0; 
+	right: 0;
+	width: 135px;
+	height: 54px;	
+}
+
+.what-they-says .wrap-right .wrap .control .btn {
+	display: inline-block;
+	width: 53px;
+	height: inherit;
+	background-color: #ffffff;
+	box-shadow: 8px 0 11px rgba(20, 20, 21, 0.05);
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	background-position: center;
+}
+.what-they-says .wrap-right .wrap .control .btn:hover {
+	background-color: #71f6eb;
+}
+
+.what-they-says .wrap-right .wrap .control .left {
+	margin-right: 25px;
+}
+
+.what-they-says .wrap-right .wrap .control .right {
+	background-image: url(img/angle-right-solid.svg);
+}
+
+.what-they-says .wrap-right .wrap .control .right:hover {
+	background-image: url(img/angle-right-solidH.svg);
+}
+
+.what-they-says .wrap-right .wrap .control .left {
+	background-image: url(img/angle-left-solid.svg);
+}
+
+.what-they-says .wrap-right .wrap .control .left:hover {
+	background-image: url(img/angle-left-solidH.svg);
+}
+
+
+
+
+
 
 .brand-name {
 	min-height: 387px;
