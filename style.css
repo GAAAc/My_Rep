@@ -812,12 +812,108 @@ body {
 
 
 
-
-
-
 .brand-name {
 	min-height: 387px;
+	padding: 5.5% 10.4%;
+	box-sizing: border-box;
 }
+
+.brand-name .wrap-sprite {
+	max-width: 1142px;
+	min-height: 182px;
+	text-align: center;
+}
+
+.brand-name li {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.brand-name .down {
+	min-height: 70px;
+}
+
+.brand-name .sprite {
+	display: inline-block;
+	width: 145px;
+	height: 70px;
+	margin-right: 3.5%;
+	background-image: url('img/sprait.png');
+	background-repeat: no-repeat;
+}
+.brand-name .sprite a {
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+.brand-name .icon1 {
+	background-position: -317px 4px;
+}
+.brand-name .icon1:hover {
+	background-position: -317px -192px;
+}
+
+.brand-name .icon2 {
+	background-position: -517px 8px;
+}
+.brand-name .icon2:hover {
+	background-position: -517px -188px;
+}
+
+.brand-name .icon3 {
+	background-position: -727px 4px;
+}
+.brand-name .icon3:hover {
+	background-position: -727px -192px;
+}
+
+.brand-name .icon4 {
+	background-position: 8px -100px;
+}
+.brand-name .icon4:hover {
+	background-position: 8px -296px;
+}
+
+.brand-name .icon5 {
+	background-position: -195px -97px;
+}
+.brand-name .icon5:hover
+ {
+	background-position: -195px -293px;
+}
+
+.brand-name .icon6 {
+	background-position: -398px -97px
+}
+.brand-name .icon6:hover {
+	background-position: -398px -293px
+}
+
+.brand-name .icon7 {
+	background-position: -600px -97px;
+}
+.brand-name .icon7:hover {
+	background-position: -600px -293px;
+}
+
+.brand-name .icon8 {
+	background-position: -803px -106px;
+}
+.brand-name .icon8:hover {
+	background-position: -803px -302px;
+}
+
+.brand-name .icon9 {
+	background-position: -1004px -106px;
+	margin-right: 0;
+}
+.brand-name .icon9:hover {
+	background-position: -1004px -302px;
+	margin-right: 0;
+}
+
+
 
 .contact-us {
 	min-height: 704px;
