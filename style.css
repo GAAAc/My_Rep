@@ -1,3 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+:focus,:active {
+	outline: none;
+}
+a:focus,a:active{
+	outline: none;
+}
+
+input::-ms-clear {display: none;}
+
 body {
 	font-family: 'fonts/Raleway-Regular.ttf';
 }
@@ -917,8 +930,100 @@ body {
 
 .contact-us {
 	min-height: 704px;
+	padding: 8.5% 10.4%;
+	box-sizing: border-box;
 	background-image: url('img/Fon.jpg');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
+
+.contact-us .left_cont {
+	float: left;
+	width: 614px;
+	height: 460px;
+	padding: 17px 31px 39px;
+	font-family: 'Raleway-Regular';
+    font-size: 15px;
+    line-height: 42px;
+    color: #fff;
+	background-color: rgba(74, 88, 98, 0.71);
+}
+
+.contact-us .left_cont hr {
+	border: none; /* Убираем границу для браузера Firefox */
+    color: #fff; /* Цвет линии для остальных браузеров */
+    background-color: #fff; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+}
+
+.contact-us .left_cont input,
+.contact-us .left_cont textarea {
+	width: 75%;
+	margin-left: 2%;
+    height: 30px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #fff;
+    border: none;
+	background-color: transparent;
+}
+
+.contact-us .left_cont textarea {
+	display: block;
+	width: 100%;
+	height: 80px;
+	line-height: 20px;
+	resize: none;
+}
+
+.contact-us .left_cont input[type=submit] {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 244px;
+	height: 53px;
+	background-color: #6eeee4;
+	font-family: 'Montserrat-Regular.ttf';
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	color: #000;
+	margin-left: 0;
+	margin-top: 38px;
+}
+
+.contact-us .right_cont {
+	float: right;
+	width: 500px;
+	height: 460px;
+	padding: 22.5px;
+	background-color: rgba(74, 88, 98, 0.71);
+}
+
+.contact-us .right_cont .info_cont {
+	width: 455px;
+	height: 191px;
+}
+
+.contact-us .right_cont .info_cont p {
+	font-family: 'Raleway-Regular';
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+}
+.contact-us .right_cont .info_cont .marg {
+	margin-bottom: 24px;
+}
+
+.contact-us .right_cont .map {
+	width: 455px;
+	height: 224px;
+	background-color: lightgrey;
+}
+
+
+
 
 .footer-main {
 	min-height: 312px;
@@ -948,4 +1053,18 @@ body {
 	.about_us__slider .wrap {
 	left: 50%;
 	margin-left: -240px;
+	}
+
+	.contact-us .left_cont,
+	.contact-us .right_cont {
+		float: none;
+		width: 100%;	
+	}
+
+	.contact-us .left_cont {
+		margin-bottom: 50px;
+	}
+
+	.contact-us .right_cont .map {
+	width: 100%;
 }
