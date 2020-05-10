@@ -977,7 +977,7 @@ body {
 	resize: none;
 }
 
-.contact-us .left_cont input[type=submit] {
+.contact-us .left_cont button {
 	position: relative;
 	left: 0;
 	bottom: 0;
@@ -988,9 +988,12 @@ body {
 	font-size: 18px;
 	line-height: 28px;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 	color: #000;
 	margin-left: 0;
 	margin-top: 38px;
+	border: none;
+	cursor: pointer;
 }
 
 .contact-us .right_cont {
