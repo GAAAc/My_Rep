@@ -419,6 +419,7 @@ body {
 	
 	transition: opacity 0.7s;
 	opacity: 0;
+	cursor: default;
 }
 .services1 .textBlok {
 	top: 58px;
@@ -565,6 +566,7 @@ body {
 	box-sizing: border-box;
 	padding: 40px;
 	opacity: 0;
+	cursor: default;
 }
 
 .small-team .pos:hover .romb1,
@@ -742,6 +744,7 @@ body {
 	box-sizing: border-box;
 	padding: 90px 100px 20px;
 	text-align: center;
+	cursor: default;
 }
 
 .what-they-says .wrap-right .wrap .info h3 {
@@ -1031,7 +1034,59 @@ body {
 .footer-main {
 	min-height: 312px;
 	background-color: #262b2e;
+	padding: 80px 20px;
 }
+
+.footer-main p {
+	font-family: 'Raleway-Regular';
+	font-size: 16px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.footer-main p:last-child {
+	font-weight: 300;
+	text-transform: none;
+}
+
+.footer-main ul {
+	height: 40px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.footer-main li {
+	display: inline-block;
+	width: 46px;
+	height: inherit;
+	background-color: #424648;
+	padding-top: 8.5px;
+	margin-right: 5px;
+}
+.footer-main li:hover {
+	background-color: #6eeee4;
+}
+
+.footer-main li a {
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+.footer-main .icon_s {
+	display: block;
+	width: inherit;
+	height: 23px;
+	fill: #bbb8b9;
+}
+.footer-main .icon_s:hover {
+	fill: #070e0d;
+}
+
+
 
 @media screen and (max-width: 1370px) {
 	.our-services .services2,
