@@ -1,12 +1,15 @@
 * {
 	box-sizing: border-box;
 }
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
 
 :focus,:active {
 	outline: none;
 }
 a:focus,a:active{
 	outline: none;
+
 }
 
 input::-ms-clear {display: none;}
@@ -74,14 +77,56 @@ body {
 
 .header__menu {
 	height: 21px;
-	width: 32px;
+	width: 30px;
 	float: right; /*Теперь блок не занимает влю ширину*/
 
 	position: relative;
 	top: 80px;
 	right: 10.6%;
 
-	background-color: red; /*Временный цвет для отображения на экране*/
+	background: #f1efef url('img/menu.png') no-repeat;
+	cursor: pointer;
+}
+
+.header__menu:hover ul {
+	transform: scale(1);
+	/*transition здесь, чтобы исчезало мгновенно*/
+	transition: transform .5s;
+}
+
+.header__menu ul {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	width: 200px;
+	background-color: #787878;
+	transform: scale(0);
+	transform-origin: 100% 0;
+	/*transition: transform .5s;*/
+}
+
+.header__menu ul li {
+	width: inherit;	
+}
+
+.header__menu ul li a {
+	display: block;
+	width: inherit;
+	font-family: 'Raleway-Regular';
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding: 10px;
+	border-bottom: 2px solid #000;
+	color: #000;
+}
+
+.header__menu ul li a:hover {
+	color: #fff;
+	border-bottom-style: dotted;
+	border-bottom-color: #fff;
 }
 
 .header__text {
@@ -1082,7 +1127,7 @@ body {
 	height: 23px;
 	fill: #bbb8b9;
 }
-.footer-main .icon_s:hover {
+.footer-main li:hover .icon_s {
 	fill: #070e0d;
 }
 
@@ -1109,8 +1154,25 @@ body {
 	}
 	
 	.about_us__slider .wrap {
-	left: 50%;
-	margin-left: -240px;
+		left: 50%;
+		margin-left: -240px;
+	}
+
+	.what-they-says .wrap-left {
+		float: none;
+		margin:0 auto; 
+		/*width: 43.3%;*/
+	}
+
+	.what-they-says .wrap-left .wrap {
+		left:calc(50% - 196px);
+	}
+
+	.what-they-says .wrap-right {
+		float: none;
+		margin: 0 auto;
+		/*width: 56.7%;*/
+		/*min-width: 666px;	*/
 	}
 
 	.contact-us .left_cont,
